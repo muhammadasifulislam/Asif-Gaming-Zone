@@ -3,6 +3,29 @@
     padding: 0;
 }
 
+
+.btn-primary {
+    border-radius: 48px;
+    background: #FF42A5;
+    border: 0;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 21px 40px;
+}
+
+.btn-2nd {
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: 0;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 21px 40px;
+}
+
 /* Google Font */
 
 body {
@@ -11,24 +34,29 @@ body {
 
 
 /* Nav */
-nav{
+nav {
+    background-color: #FFF;
     padding: 30px 240px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
 }
 
-.logoname{
+.logoname {
     text-align: center;
     font-size: 32px;
     font-weight: 700;
-   
+
     margin-left: 15px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     margin-top: 9px;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin-right: 30px;
     color: #3C354F;
@@ -42,73 +70,168 @@ nav ul a {
     color: black;
 }
 
-.follow-us{
+.follow-us {
     width: 218px;
     border-radius: 8px;
     background-color: #E7E6E9;
     padding: 15px 10px;
- 
+
     margin-top: -14px;
 }
 
 
+/* BANNER */
+.banner {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner .left-side {
+    background-image: url("Group 14.png");
+    margin-left: -92px;
+    width: 901px;
+    height: 700px;
+    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    text-align: center;
+
+
+}
+
+.banner-content {
+    margin-top: 141px;
+}
+
+.banner .left-side h2 {
+
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner .left-side h1 {
+    text-align: center;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 95px;
+    margin-bottom: 22px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+}
+
+.banner .left-side ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.banner .left-side ul li {
+    color: #534C64;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+
+    font-weight: 500;
+
+
+}
+
 
 
 /* Responsive Mobile */
-@media screen and (max-width: 425px)  {
-    nav{
+@media screen and (max-width: 425px) {
+    nav {
         padding: 30px 110px;
         flex-direction: column;
         margin-left: 10px;
     }
-    
+
     nav ul {
         flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-top: 16px;
+        margin-right: 5px;
+    }
+
+    .logo {
+
+        margin-left: -11px;
+
+    }
+
+    .follow-us {
+        margin-top: 15px;
+        margin-left: -20px;
+    }
+
+.banner{
+    flex-direction: column-reverse;
+}
+    
+.right-img{
+    
+    width: 426px;
+
+}
+.banner-content{
+    margin-left: -290px;
+    
+}
+.banner .left-side{
     margin-top: 20px;
 }
-
-nav ul li {
-    margin-top: 16px;
-    margin-right: 5px;
-}
-.logo{
-    
-    margin-left: -11px;
-
-}
-
-.follow-us{
-    margin-top: 15px;
-    margin-left: -20px;
 }
 
 
-}
-    
-
-    /* Responsive Tablet */
+/* Responsive Tablet */
 @media screen and (min-width:426px) and (max-width:768px) {
-    nav{
+    nav {
         flex-direction: column;
         margin-left: 35px;
     }
-nav ul {
-    flex-direction: column;
-    margin-top: 20px;
-}
-nav ul li {
-    margin-top: 13px;
-}
-.logo{
-    
-    margin-left: 20px;
 
-}
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
 
-.follow-us{
-    margin-top: 12px;
-    margin-left: 3px;
-}
+    nav ul li {
+        margin-top: 13px;
+    }
+
+    .logo {
+
+        margin-left: 20px;
 
     }
+
+    .follow-us {
+        margin-top: 12px;
+        margin-left: 3px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .right-img{
+    margin-left: 5px;
+        width: 760px;
     
+    }
+.banner-content{
+        margin-left: -180px;
+        
+    }
+    .banner .left-side{
+        margin-top: 20px;
+    }
+}

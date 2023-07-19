@@ -89,7 +89,7 @@ nav ul a {
     justify-content: space-around;
 }
 
-.banner .left-side {
+.banner-content {
     background-image: url("Group 14.png");
     background-size: contain;
     margin-left: -92px;
@@ -99,10 +99,7 @@ nav ul a {
     text-align: center;
 
 
-}
-
-.banner-content {
-    margin-top: 141px;
+    
 }
 
 .banner .left-side h2 {
@@ -112,6 +109,7 @@ nav ul a {
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
+   
 }
 
 .banner .left-side h1 {
@@ -390,12 +388,21 @@ height: 636px;
     width: 426px;
 
 }
+.banner-content2{
+    padding-top: 0px;
+}
 .banner-content{
-    margin-left: -290px;
+  
+    background-size: contain;
+    padding: 40px 10px;
+    margin-left: -92px;
+    width: 470px;
+    height: 386px;
     
 }
 .banner .left-side{
     margin-top: 20px;
+
    
 }
 
@@ -559,6 +566,7 @@ height: 636px;
     }
     .banner .left-side{
         margin-top: 20px;
+      
     }
     /* Online Game */
   .online-games-video{ display: grid;

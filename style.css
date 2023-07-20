@@ -212,17 +212,27 @@ width: 342px;
 }
 .ajax{
     position: absolute;
-    top: 50%;
+   top: 45%;
     left: 33%;
     color: white;
     opacity: 0;
     transition: 0.4s;
 }
+.ajax i{
+    margin-left: 35px;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
 .play-icon:hover .ajax {
 opacity: 1;
 z-index: 1;
 }
-
+.watch-now{
+    color: #ff42a5 !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+}
 
 
 /* Play Instant */
@@ -295,7 +305,7 @@ margin-top: 20px;
 /*footer */
 footer{
    
-height: 636px;
+height: 545px;
     background-color: #0B0223;
 }
 .footer-title{
@@ -315,6 +325,10 @@ height: 636px;
  
     font-weight: 600;
 }
+.footer-menu ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
 .terms ul{
     color: #FFF;
     display: flex;
@@ -324,8 +338,17 @@ height: 636px;
 }
 .terms ul li{
     list-style: none;
-    font-weight: 600;
+ 
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
 }
+.terms ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+}
+
 .social-link ul i{
     color: #FFF;
     font-size: 30px;
@@ -391,6 +414,7 @@ height: 636px;
 }
 .banner-content2{
     padding-top: 0px;
+    padding-left: 40px
 }
 .banner-content{
   
@@ -433,6 +457,13 @@ height: 636px;
 }
 
 /* Online Game */
+.ajax{
+    left: 27% !important;
+}
+.ajax i{
+    margin-left: 50px !important;
+}
+
 .online-games h1 {
    
     font-size: 28px;
@@ -512,16 +543,29 @@ height: 636px;
     background-color: #FFF;
     
 }
-
+footer{
+    height: 636px;
+}
 .footer-menu ul{
     flex-wrap: wrap;
   
-}
+}/*
 .terms ul{
     flex-wrap: wrap;
   
+}*/
+.terms ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 84px;
+gap: 2rem;
+padding-right: 60px;
+}
+.copyright p{
+    margin-top: 8px;
 }
 }
+
 
 
 /* Responsive Tablet */
